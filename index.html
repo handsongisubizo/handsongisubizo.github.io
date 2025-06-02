@@ -3,150 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Handson Gisubizo – DFT, machine learning, and molecular simulation for sustainable chemical engineering solutions.">
-  <meta name="keywords" content="DFT, Machine Learning, Molecular Simulation, ORCA, LAMMPS, Quantum ESPRESSO, Chemical Engineering, Handson Gisubizo">
+  <meta name="description" content="Portfolio of Handson Gisubizo – also known as Gisubizo Handson – showcasing DFT, machine learning, and molecular simulation for advanced chemical engineering.">
+  <meta name="keywords" content="Handson Gisubizo, Gisubizo Handson, Handson, Gisubizo, ChemBE, DFT, molecular simulation, ORCA, Quantum ESPRESSO, LAMMPS, water cluster, machine learning, Johns Hopkins, chemical engineering">
   <meta name="author" content="Handson Gisubizo">
-  <meta property="og:title" content="Handson Gisubizo | Molecular Engineering & Simulation">
-  <meta property="og:description" content="Explore advanced DFT, ML, and simulation projects by Handson Gisubizo.">
+  <meta property="og:title" content="Handson Gisubizo | ChemBE Portfolio">
+  <meta property="og:description" content="Explore DFT, ML, and simulation projects by Handson Gisubizo – also known as Gisubizo Handson.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://handsongisubizo.com">
-  <title>Handson Gisubizo | ChemBE Simulation & AI Portfolio</title>
+  <title>Handson Gisubizo | DFT, ML & Simulation Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: linear-gradient(to right, #e8f5e9, #ffffff);
-      color: #212121;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #222;
     }
     .container {
-      max-width: 1000px;
+      max-width: 800px;
       margin: 60px auto;
       background-color: #ffffff;
       padding: 40px 50px;
-      border-radius: 20px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-    }
-    h1, h2, h3 {
-      color: #1b5e20;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      font-size: 36px;
+      font-size: 30px;
+      color: #1a237e;
       margin-bottom: 10px;
     }
-    h2 {
-      margin-top: 40px;
-      font-size: 24px;
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 12px;
     }
     h3 {
+      margin-top: 35px;
+      color: #0d47a1;
       font-size: 20px;
-      margin-top: 25px;
-      border-bottom: 2px solid #81c784;
-      padding-bottom: 5px;
-    }
-    p, li {
-      font-size: 16px;
-      line-height: 1.7;
+      border-bottom: 2px solid #64b5f6;
+      padding-bottom: 6px;
     }
     ul {
-      list-style-type: none;
       padding: 0;
+      list-style-type: none;
     }
     li {
-      margin-bottom: 10px;
+      margin: 12px 0;
     }
     a {
       color: #0277bd;
-      font-weight: 500;
       text-decoration: none;
+      font-weight: 500;
     }
     a:hover {
       text-decoration: underline;
       color: #01579b;
     }
-    .nav {
-      margin-top: 30px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .nav a {
-      background-color: #e0f2f1;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 14px;
-      border: 1px solid #80cbc4;
-    }
     .contact {
-      margin-top: 30px;
+      margin-top: 15px;
     }
-    img.profile {
-      width: 120px;
-      border-radius: 50%;
-      float: right;
-      margin-left: 20px;
-      margin-top: -30px;
+    .contact p {
+      margin: 6px 0;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Handson Gisubizo</h1>
-    <img src="images/profile.jpg" alt="Handson Gisubizo" class="profile">
-    <p><strong>Chemical Engineering | Molecular Modeling & Machine Learning</strong></p>
-    <p>I’m passionate about building accurate models of molecules and materials using quantum chemistry and machine learning. I work on solving problems related to water, hydrogen bonding, solvation, and force field development with modern tools like ORCA, LAMMPS, and NequIP.</p>
+    <h1>Welcome to Handson Gisubizo's Portfolio</h1>
+    <p><strong>MSE ChemBE @ Johns Hopkins (JH)</strong></p>
+    <p>I use DFT, machine learning, and molecular simulation to explore and solve advanced problems in chemical and biomolecular engineering.</p>
 
-    
-
-    <h2>Explore Projects</h2>
-    <div class="nav">
-      <a href="#butane">01 Butane Conformers</a>
-      <a href="#water">02 Water Clusters</a>
-      <a href="#thermo">03 Thermodynamic Solvation</a>
-      <a href="#hydrogen">04 OH Hydrogen Bonding</a>
-      <a href="#force">05 OH Bond Force Constant</a>
-      <a href="#report">📄 Final Report</a>
-    </div>
-
-    <h3 id="butane">01. Butane Conformers</h3>
-    <p>Explored the structure and energy landscape of butane using DFT and ORCA. Focused on how rotation around the central bond affects molecular stability.</p>
-    <img src="images/butane_plot.png" alt="Butane Plot" style="width:100%; max-width:600px; border-radius:12px; margin-top:15px;">
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/01_butane_conformers">View on GitHub</a>
-
-    <h3 id="water">02. Water Cluster</h3>
-    <p>Simulated water dimer, trimer, and pentamer clusters to understand hydrogen bonding networks. Compared implicit and explicit solvation models.</p>
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/02_water_cluster">View on GitHub</a>
-
-    <h3 id="thermo">03. Thermodynamic Solvation</h3>
-    <p>Calculated solvation free energies and compared them to experimental data. Applied thermodynamic corrections using vibrational analysis.</p>
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/03_thermo_water_cluster">View on GitHub</a>
-
-    <h3 id="hydrogen">04. OH Interaction Study</h3>
-    <p>Analyzed OH...O hydrogen bonding in water clusters. Focused on geometric factors that influence interaction energy and strength.</p>
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/05_OH_interaction_study">View on GitHub</a>
-
-    <h3 id="force">05. OH Bond Force Constant</h3>
-    <p>Used small structural perturbations to extract energy-force relationships. Estimated OH bond stiffness for use in machine-learned potentials.</p>
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/05_oh_bond_force">View on GitHub</a>
-
-    <h3 id="report">Final Project Report</h3>
-    <p>Full report detailing methodology, results, code structure, and scientific conclusions.</p>
-    <a href="https://github.com/handsongisubizo/orca-dft-analysis/blob/main/report/orca_dft_project_report.pdf">📄 View PDF Report</a>
-
-    <h2>Scientific Insights</h2>
+    <h3>Featured Projects:</h3>
     <ul>
-      <li><a href="posts/dft_vs_ml_forcefields.html">🧠 DFT vs ML: Choosing the Right Tool for Force Field Generation</a></li>
-      <li><a href="posts/solvation_models_water.html">💧 Understanding Water Solvation: Implicit vs. Explicit Models</a></li>
-      <li><a href="posts/nequip_training_water.html">🤖 How I Trained NequIP on Water Cluster Data</a></li>
+      <li><a href="https://github.com/handsongisubizo/orca-dft-analysis">ORCA DFT Analysis – Solvation, Transition States, Hydrogen Bonding</a></li>
+      <li><a href="https://github.com/handsongisubizo/orca-dft-ml-forcefield-water">ORCA-DFT Machine Learning Force Field for Water</a></li>
+      <li><a href="https://github.com/handsongisubizo/ammonia-decomposition-qe">Ammonia Decomposition on Metal Surfaces using Quantum ESPRESSO</a></li>
+      <li><a href="https://github.com/handsongisubizo/md-simulation-water-cooling">Water Cluster Cooling Simulation using LAMMPS</a></li>
     </ul>
 
-    <h2>Contact & Links</h2>
+    <h3>Contact:</h3>
     <div class="contact">
       <p>Email: <a href="mailto:hgisubi1@jh.edu">hgisubi1@jh.edu</a></p>
       <p>GitHub: <a href="https://github.com/handsongisubizo" target="_blank">handsongisubizo</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/handsongisubizo" target="_blank">handsongisubizo</a></p>
-      <p>ORCID: <a href="https://orcid.org/0000-000X-XXXX-XXXX" target="_blank">0000-000X-XXXX-XXXX</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">View Profile</a></p>
-      <p>📄 <a href="Handson_Gisubizo_CV.pdf" download>Download my latest CV</a></p>
     </div>
   </div>
 </body>
