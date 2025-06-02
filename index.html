@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Handson Gisubizo – DFT, machine learning, and molecular simulation for sustainable chemical engineering solutions.">
-  <meta name="keywords" content="DFT, Machine Learning, Molecular Simulation, ORCA, LAMMPS, Quantum ESPRESSO, Chemical Engineering, Johns Hopkins, Handson Gisubizo">
+  <meta name="keywords" content="DFT, Machine Learning, Molecular Simulation, ORCA, LAMMPS, Quantum ESPRESSO, Chemical Engineering, Handson Gisubizo">
   <meta name="author" content="Handson Gisubizo">
   <meta property="og:title" content="Handson Gisubizo | Molecular Engineering & Simulation">
   <meta property="og:description" content="Explore advanced DFT, ML, and simulation projects by Handson Gisubizo.">
@@ -79,13 +79,23 @@
     .contact {
       margin-top: 30px;
     }
+    img.profile {
+      width: 120px;
+      border-radius: 50%;
+      float: right;
+      margin-left: 20px;
+      margin-top: -30px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Handson Gisubizo</h1>
-    <p><strong>MSE ChemBE @ Johns Hopkins University</strong></p>
-    <p>Integrating <strong>Density Functional Theory (DFT)</strong>, <strong>machine learning</strong>, and <strong>molecular simulation</strong> to solve grand challenges in chemical and biomolecular engineering.</p>
+    <img src="images/profile.jpg" alt="Handson Gisubizo" class="profile">
+    <p><strong>Chemical Engineering | Molecular Modeling & Machine Learning</strong></p>
+    <p>I’m passionate about building accurate models of molecules and materials using quantum chemistry and machine learning. I work on solving problems related to water, hydrogen bonding, solvation, and force field development with modern tools like ORCA, LAMMPS, and NequIP.</p>
+
+    
 
     <h2>Explore Projects</h2>
     <div class="nav">
@@ -98,34 +108,45 @@
     </div>
 
     <h3 id="butane">01. Butane Conformers</h3>
-    <p>Studied the energetics and structural changes of butane using conformational analysis via ORCA. Explored dihedral rotation and energetic barriers.</p>
+    <p>Explored the structure and energy landscape of butane using DFT and ORCA. Focused on how rotation around the central bond affects molecular stability.</p>
+    <img src="images/butane_plot.png" alt="Butane Plot" style="width:100%; max-width:600px; border-radius:12px; margin-top:15px;">
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/01_butane_conformers">View on GitHub</a>
 
     <h3 id="water">02. Water Cluster</h3>
-    <p>Simulated water dimer, trimer, and pentamer clusters. Analyzed hydrogen bonding patterns and compared implicit vs. explicit solvation models.</p>
+    <p>Simulated water dimer, trimer, and pentamer clusters to understand hydrogen bonding networks. Compared implicit and explicit solvation models.</p>
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/02_water_cluster">View on GitHub</a>
 
     <h3 id="thermo">03. Thermodynamic Solvation</h3>
-    <p>Computed thermodynamic corrections and solvation free energies of small molecules. Compared with experimental trends.</p>
+    <p>Calculated solvation free energies and compared them to experimental data. Applied thermodynamic corrections using vibrational analysis.</p>
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/03_thermo_water_cluster">View on GitHub</a>
 
     <h3 id="hydrogen">04. OH Interaction Study</h3>
-    <p>Focused analysis of OH groups and water interaction in solvated clusters. Studied hydrogen bond distance and orientation impact on energy.</p>
+    <p>Analyzed OH...O hydrogen bonding in water clusters. Focused on geometric factors that influence interaction energy and strength.</p>
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/05_OH_interaction_study">View on GitHub</a>
 
     <h3 id="force">05. OH Bond Force Constant</h3>
-    <p>Extracted energy-force relationships from small perturbations to estimate force constants using DFT data. Useful for training ML force fields.</p>
+    <p>Used small structural perturbations to extract energy-force relationships. Estimated OH bond stiffness for use in machine-learned potentials.</p>
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/05_oh_bond_force">View on GitHub</a>
 
     <h3 id="report">Final Project Report</h3>
-    <p>Complete write-up of methods, results, and scientific interpretation.</p>
+    <p>Full report detailing methodology, results, code structure, and scientific conclusions.</p>
     <a href="https://github.com/handsongisubizo/orca-dft-analysis/blob/main/report/orca_dft_project_report.pdf">📄 View PDF Report</a>
+
+    <h2>Scientific Insights</h2>
+    <ul>
+      <li><a href="posts/dft_vs_ml_forcefields.html">🧠 DFT vs ML: Choosing the Right Tool for Force Field Generation</a></li>
+      <li><a href="posts/solvation_models_water.html">💧 Understanding Water Solvation: Implicit vs. Explicit Models</a></li>
+      <li><a href="posts/nequip_training_water.html">🤖 How I Trained NequIP on Water Cluster Data</a></li>
+    </ul>
 
     <h2>Contact & Links</h2>
     <div class="contact">
       <p>Email: <a href="mailto:hgisubi1@jh.edu">hgisubi1@jh.edu</a></p>
       <p>GitHub: <a href="https://github.com/handsongisubizo" target="_blank">handsongisubizo</a></p>
-      <p>YouTube: <a href="https://www.youtube.com/@HandsonGisubizo" target="_blank">@HandsonGisubizo</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/handsongisubizo" target="_blank">handsongisubizo</a></p>
+      <p>ORCID: <a href="https://orcid.org/0000-000X-XXXX-XXXX" target="_blank">0000-000X-XXXX-XXXX</a></p>
+      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">View Profile</a></p>
+      <p>📄 <a href="Handson_Gisubizo_CV.pdf" download>Download my latest CV</a></p>
     </div>
   </div>
 </body>
