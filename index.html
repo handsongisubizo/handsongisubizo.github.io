@@ -60,6 +60,12 @@
       text-decoration: underline;
       color: #01579b;
     }
+    ul.sub-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #444;
+    }
     .contact {
       margin-top: 15px;
     }
@@ -82,7 +88,15 @@
 
     <h3>Featured Projects:</h3>
     <ul>
-      <li><a href="https://github.com/handsongisubizo/orca-dft-analysis">ORCA DFT Analysis – Solvation, Transition States, Hydrogen Bonding</a></li>
+      <li>
+        <a href="https://github.com/handsongisubizo/orca-dft-analysis">ORCA DFT Analysis – Solvation, Transition States, Hydrogen Bonding</a>
+        <ul class="sub-list">
+          <li><a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/solvation">1. Solvation Modeling</a></li>
+          <li><a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/transition_states">2. Transition State Search</a></li>
+          <li><a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/hydrogen_bonding">3. Hydrogen Bonding Analysis</a></li>
+          <li><a href="https://github.com/handsongisubizo/orca-dft-analysis/tree/main/pair_energy">4. Pair Interaction Energy Decomposition</a></li>
+        </ul>
+      </li>
       <li><a href="https://github.com/handsongisubizo/orca-dft-ml-forcefield-water">ORCA-DFT Machine Learning Force Field for Water</a></li>
       <li><a href="https://github.com/handsongisubizo/ammonia-decomposition-qe">Ammonia Decomposition on Metal Surfaces using Quantum ESPRESSO</a></li>
       <li><a href="https://github.com/handsongisubizo/md-simulation-water-cooling">Water Cluster Cooling Simulation using LAMMPS</a></li>
