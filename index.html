@@ -150,15 +150,16 @@ C<!DOCTYPE html>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/handsongisubizo" target="_blank" rel="noopener">handsongisubizo</a></p>
       <p>YouTube: <a href="https://www.youtube.com/@HandsonGisubizo" target="_blank" rel="noopener">@HandsonGisubizo</a></p>
 
-   <!-- Drop this whole block into your page where you want the contact section. It has no external deps. -->
+      <!-- Drop this whole block into your page where you want the contact section. It has no external deps. -->
 <section class="contact" aria-labelledby="contact-heading">
   <style>
     /* Light-on-white safe palette: forces readable colors even if OS is in dark mode */
     .contact {
-      --icon-size: 22px;          /* tweak icon size */
-      --gap: 12px;                /* space between items */
-      --text: #0f172a;            /* slate-900 */
-      --text-muted: #475569;      /* slate-600 */
+      --icon-size: 24px;          /* bigger icons */
+      --gap: 14px;                /* a touch more spacing */
+      --text: #ffffff;            /* white text on solid brand pills */
+      --text-muted: #475569;
+      display: block;
     }
     .contact h3 {
       margin: 0 0 8px 0;
@@ -172,26 +173,25 @@ C<!DOCTYPE html>
       display: flex;
       flex-wrap: wrap;
       gap: var(--gap);
+      justify-content: center;   /* center in the card */
     }
     .social-item { display: inline-flex; }
     .social-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
+      gap: 10px;
+      padding: 10px 14px;
       border-radius: 999px; /* pill */
       text-decoration: none;
       color: var(--text);
-      background: #ffffff;                  /* ensure contrast on white cards */
-      border: 1px solid rgba(2, 6, 23, 0.08); /* subtle border */
-      box-shadow: 0 1px 2px rgba(2,6,23,0.06); /* slight lift */
-      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+      border: none;                 /* remove border */
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
     }
     .social-link:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 10px rgba(2,6,23,0.08);
-      border-color: rgba(2,6,23,0.16);
-    }
+      transform: translateY(-2px);
     .social-link span { font-weight: 600; letter-spacing: 0.1px; }
     .icon { width: var(--icon-size); height: var(--icon-size); display: inline-block; }
     .icon svg { width: 100%; height: 100%; fill: currentColor; }
@@ -258,6 +258,9 @@ C<!DOCTYPE html>
 
   <p class="contact-note">Tip: change <code>--icon-size</code> to 18px/24px to resize icons; update URLs & labels as needed.</p>
 </section>
+
+   
+       
 
       
      
