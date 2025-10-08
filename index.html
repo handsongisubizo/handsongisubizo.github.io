@@ -150,7 +150,7 @@ C<!DOCTYPE html>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/handsongisubizo" target="_blank" rel="noopener">handsongisubizo</a></p>
       <p>YouTube: <a href="https://www.youtube.com/@HandsonGisubizo" target="_blank" rel="noopener">@HandsonGisubizo</a></p>
 
-      <!-- Drop this whole block into your page where you want the contact section. It has no external deps. -->
+<!-- Drop this whole block into your page where you want the contact section. It has no external deps. -->
 <section class="contact" aria-labelledby="contact-heading">
   <style>
     /* Light-on-white safe palette: forces readable colors even if OS is in dark mode */
@@ -192,19 +192,39 @@ C<!DOCTYPE html>
     }
     .social-link:hover {
       transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+      filter: saturate(1.05) brightness(1.02);
+    }
     .social-link span { font-weight: 600; letter-spacing: 0.1px; }
     .icon { width: var(--icon-size); height: var(--icon-size); display: inline-block; }
     .icon svg { width: 100%; height: 100%; fill: currentColor; }
 
     /* Optional: brand colors as default, not just on hover */
-    .social-link.github { color: #111111; }
-    .social-link.linkedin { color: #0a66c2; }
-    .social-link.youtube { color: #ff0000; }    .social-link.email { color: #ea4335; } /* Gmail red */
+    .social-link.github { background:#111111; }
+    .social-link.linkedin { background:#0a66c2; }
+    .social-link.youtube { background:#ff0000; }    .social-link.email { color: #ea4335; } /* Gmail red */
 
     /* Small print line */
-    .contact-note { margin-top: 8px; color: var(--text-muted); font-size: 0.9rem; }
+    .social-link.email { background:#ea4335; } /* Gmail red */
+    .contact-note { margin-top: 10px; color: var(--text-muted); font-size: 0.9rem; text-align:center; }
     .sr-only { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
-  </style>
+    /* Hard visibility overrides in case a parent sets low opacity or global colors */
+  .contact { opacity: 1 !important; filter: none !important; }
+  .contact * { text-shadow: none; }
+
+  /* Stronger specificity + !important so brand pills always show */
+  .contact ul.social-list .social-item .social-link { color: #ffffff !important; }
+  .contact ul.social-list .social-item .social-link.github { background: #111111 !important; }
+  .contact ul.social-list .social-item .social-link.linkedin { background: #0a66c2 !important; }
+  .contact ul.social-list .social-item .social-link.youtube { background: #ff0000 !important; }
+  .contact ul.social-list .social-item .social-link.email { background: #ea4335 !important; }
+  .contact .icon svg { fill: currentColor !important; }
+
+  /* Add a visible outline so pills don't disappear on light backgrounds */
+  .contact ul.social-list .social-item .social-link { 
+    border: 1px solid rgba(0,0,0,0.18) !important;
+  }
+</style>
 
   <h3 id="contact-heading">Contact</h3>
   <ul class="social-list">
@@ -259,8 +279,6 @@ C<!DOCTYPE html>
   <p class="contact-note">Tip: change <code>--icon-size</code> to 18px/24px to resize icons; update URLs & labels as needed.</p>
 </section>
 
-   
-       
 
       
      
